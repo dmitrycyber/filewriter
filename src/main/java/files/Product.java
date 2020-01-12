@@ -1,7 +1,9 @@
+package files;
+
 public class Product implements Comparable<Product> {
     private int id;
     private String name;
-    private int price;
+    private double price;
 
     public Product(int id, String name, int price) {
         this.id = id;
@@ -15,7 +17,7 @@ public class Product implements Comparable<Product> {
 
     @Override
     public String toString() {
-        return "Product{" +
+        return "files.Product{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", price=" + price +
@@ -34,7 +36,7 @@ public class Product implements Comparable<Product> {
         this.name = name;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
